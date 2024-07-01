@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <title>Real-Time Earthquake Monitoring</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <style>
+        .container {
+            position: relative;
+            width: 352px;
+            height: 400px;
+        }
+        .base-map {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .real-time-frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://smi.lmoniexp.bosai.go.jp/data/map_img/CommonImg/base_map_b.gif" class="base-map" alt="Base Map">
+        <iframe id="realTimeImageFrame" class="real-time-frame"></iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
